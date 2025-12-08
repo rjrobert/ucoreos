@@ -1,0 +1,10 @@
+{
+  "include": [
+    "fish",
+    "neovim",
+    "bat",
+    "just",
+    "distrobox"
+  ],
+  "exclude": []
+}
