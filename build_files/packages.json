@@ -4,7 +4,11 @@
     "neovim",
     "bat",
     "just",
-    "distrobox"
+    "distrobox",
+    "gcc",
+    "fastfetch",
+    "gcc",
+    "helix"
   ],
   "exclude": []
 }

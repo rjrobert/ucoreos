@@ -2,8 +2,8 @@
 
 set -ouex pipefail
 
-EXCLUDED_PACKAGES=($(jq -r ".exclude | sort | unique[]" /packages.json))
-INCLUDED_PACKAGES=($(jq -r ".include | sort | unique[]" /packages.json))
+EXCLUDED_PACKAGES=($(jq -r ".exclude | sort | unique[]" /ctx/packages.json))
+INCLUDED_PACKAGES=($(jq -r ".include | sort | unique[]" /ctx/packages.json))
 
 if [[ "${#EXCLUDED_PACKAGES[@]}" -gt 0 ]]; then
   dnf5 -y remove "${EXCLUDED_PACKAGES[@]}"
