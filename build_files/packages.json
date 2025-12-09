@@ -8,7 +8,8 @@
     "gcc",
     "fastfetch",
     "gcc",
-    "helix"
+    "helix",
+    "nfs-utils"
   ],
   "exclude": []
 }
