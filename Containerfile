@@ -1,7 +1,7 @@
 FROM scratch AS ctx
 COPY build_files /
 
-FROM ghcr.io/ublue-os/ucore-minimal:stable-nvidia
+FROM ghcr.io/ublue-os/ucore-minimal:stable-nvidia-lts
 
 COPY system_files/etc /etc
 
