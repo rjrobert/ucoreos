@@ -18,5 +18,5 @@ systemctl enable cockpit.service
 
 systemctl enable var-truenas.mount
 
-systemctl disable rpm-osteed-automatic.timer
+systemctl disable rpm-ostreed-automatic.timer
 systemctl enable bootc-fetch-apply-updates.timer

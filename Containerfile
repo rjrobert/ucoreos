@@ -4,6 +4,7 @@ COPY build_files /
 FROM ghcr.io/ublue-os/ucore-minimal:stable-nvidia-lts
 
 COPY system_files/etc /etc
+COPY system_files/usr /usr
 
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
   --mount=type=cache,dst=/var/cache \
